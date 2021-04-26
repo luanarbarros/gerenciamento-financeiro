@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Luana Barros">
+  <title>Gerenciador de Finanças</title>
+  
+
+  
+  <!-- Bootstrap core CSS -->
+  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+  <script defer src="assets/fontawesome.all.min.js"></script>
+  
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+    
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  
+  
+  <!-- Custom styles for this template -->
+  <link href="assets/style.css" rel="stylesheet">
+</head>
+<body>
+  
+  <div class="col-lg-8 mx-auto p-3 py-md-5">
+    <img src="assets/images/financas.png" class="img-fluid mb-3" alt="...">
+    <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
+      <div class="col-10">
+      <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+        <i class="fas fa-home fs-2 me-2"></i>
+        <span class="fs-4">Casa</span>
+      </a></div>
+      <div class="col-2 text-end">
+        <button type="button" class="btn btn-warning" style="font-weight: bold;">
+          <i class="fas fa-plus-circle fs-8"></i>
+          Despesa
+        </button>
+        <button type="button" class="btn" style="font-weight: bold; font-size: 1.5em;">
+          <i class="fas fa-cog"></i>
+        </button>
+      </div>
+    </header>
+
+    <div class="row alert " id="members">
+    </div>
+
+    <div class="row alert alert-secondary" id="expenses">
+      <h4>Despesas</h4>
+    </div>
+    
+    <div class="row alert alert-secondary" id="funds">
+      <h4>Reservas</h4>
+    </div>
+
+    <div class="row alert alert-secondary" id="investments">
+      <h4>Investimentos</h4>
+    </div>
+
+    <div class="py-md-3 border-bottom">
+      <div class="col-10 ">
+        <a href="#" class="d-flex align-items-center text-dark text-decoration-none">
+          <i class="fas fa-file-invoice-dollar fs-2 me-2"></i>
+          <span class="fs-4">Resumo da última semana</span>
+        </a></div>
+    </div>
+
+    <div class="row gx-5 p-3 py-md-5">
+      <div class="col-6 ">
+        <div class="alert alert-success h4 row">
+          <div class="col">Entradas</div>
+          <div class="col text-end" id="total-incomes"></div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="alert alert-danger h4 row">
+          <div class="col">Saídas</div>
+          <div class="col text-end" id="total-expenses"></div>
+        </div>
+      </div>
+    </div>
+    
+
+    <footer class="pt-5 my-5 text-muted border-top ">
+      Created by Luana Barros for Script Language course module &middot; 2021
+    </footer>
+  </div>
+  
+  
+  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js" type="module"></script>
+  
+  
+</body>
+</html>
